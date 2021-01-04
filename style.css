@@ -1,0 +1,30 @@
+.txt {
+    text-align: center;
+    margin: 12px;
+}
+canvas {
+    border: 2px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;
+}
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&subset=latin,cyrillic);
+h1 {
+    font-family: 'Comfortaa', cursive;
+    margin: 0px;
+}
+h2 {
+    font-family: 'Comfortaa', cursive;
+}
+h5 {
+    font-family: 'Comfortaa', cursive;
+}
+.b{
+    font-family: 'Comfortaa', cursive;
+    color: black;
+}
+body{
+    background: url(fon1.jpg);
+}
