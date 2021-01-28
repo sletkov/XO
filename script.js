@@ -569,24 +569,26 @@
     })
     function isWin(){
         if((X1 == 1 && X2 == 1 && X3 == 1)||(X4 == 1 && X5 == 1 && X6 == 1)||(X7 == 1 && X8 == 1 && X9 == 1) ||(X1 == 1 && X4 == 1 && X7 == 1)||(X2 == 1 && X5 == 1 && X8 == 1)||(X3 == 1 && X6 == 1 && X9 == 1)||(X1 == 1 && X5 == 1 && X9 == 1)||(X3 == 1 && X5 == 1 && X7 == 1)){
-            alert("Победил первый игрок!");
+            
             canTurn = false;
             score1++
             document.getElementById("score1").innerHTML = score1;
             turn = 1;
             document.getElementById("whoturn").innerHTML ="Ходит первый игрок - X";
+            setTimeout(() => alert("Победил первый игрок!"));
         }
         else if((O1 == 1 && O2 == 1 && O3 == 1)||(O4 == 1 && O5 == 1 && O6 == 1)||(O7 == 1 && O8 == 1 && O9 == 1) ||(O1 == 1 && O4 == 1 && O7 == 1)||(O2 == 1 && O5 == 1 && O8 == 1)||(O3 == 1 && O6 == 1 && O9 == 1)||(O1 == 1 && O5 == 1 && O9 == 1)||(O3 == 1 && O5 == 1 && O7 == 1)){
-            alert("Победил второй игрок!");
+            
             canTurn = false;
             score2++;
             document.getElementById("score2").innerHTML = score2;
             turn = 2;
             document.getElementById("whoturn").innerHTML ="Ходит второй игрок - 0";
+            setTimeout(() => alert("Победил второй игрок!"));
         }
         else if ((X1 ==1 ||O1 == 1)&&(X2 == 1||O2 == 1)&&(X3 == 1||O3 == 1)&&(X4 == 1||O4 == 1)&&(X5 == 1||O5 == 1)&&(X6 == 1||O6 == 1)&&(X7 == 1||O7 == 1)&&(X8 == 1||O8 == 1)&&(X9 == 1||O9 == 1)){
-            alert("Ничья!")
             canTurn = false;
+            setTimeout(() => alert("ничья!"));
             if(score2 < score1){
                 turn = 2;
                 document.getElementById("whoturn").innerHTML ="Ходит второй игрок - 0";
